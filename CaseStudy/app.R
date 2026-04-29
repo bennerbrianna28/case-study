@@ -35,6 +35,19 @@ ui <- fluidPage(
   fluidRow(
     column(2, actionButton("story", "Tell me a story")), # action button
     column(10, textOutput("narrative")) # text output
+  ),
+  # provide definitions for common abbreviations
+  h2(strong("Common abbreviations")),
+  tags$p("The stories use a variety of abbreviations to describe the patient, their injury, the diagnosis, and treatment. Several common abbreviations include:"),
+  tags$ul(
+    tags$li("DX = diagnosis"),
+    tags$li("FX = fracture"),
+    tags$li("YOM/F = year old male/female"),
+    tags$li("C/O = complains of"),
+    tags$li("LAC = laceration"),
+    tags$li("ABD = abdomen"),
+    tags$li("STR/SPR = strain/sprain"),
+    tags$li("SP = status post")
   )
 )
 
