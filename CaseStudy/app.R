@@ -11,7 +11,7 @@ if (!exists("injuries")) {
 }
 
 
-# Define UI for application that draws a histogram
+# Define UI 
 ui <- fluidPage(
   # give user choice between number of injuries or population standardised rate
   fluidRow(
